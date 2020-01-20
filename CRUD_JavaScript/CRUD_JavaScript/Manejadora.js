@@ -196,7 +196,14 @@ function createTable(listadoPersonas, listadoDepartamentos) {
                         tabCell.innerHTML = departamento.nombre;
                     }
 
-                break;
+                    break;
+                case 5:
+                    var telefono = document.createElement('input');
+                    telefono.setAttribute('type', 'number');
+                    if (listadoPersonas[i][this.col[j]] != undefined) {
+                        tabCell.innerHTML = listadoPersonas[i][this.col[j]];
+                    }
+                    break;
                 case 6:
                     var img = document.createElement('img');
                     img.src = "data:image/jpg;base64," + listadoPersonas[i][this.col[j]];
@@ -264,37 +271,7 @@ function createTable(listadoPersonas, listadoDepartamentos) {
 
         for (var j = 0; j < col.length-1; j++) {
             var newCell = tr.insertCell(-1);
-            switch (j) { 
-                case 4:    // WE'LL ADD A DROPDOWN LIST AT THE SECOND COLUMN (FOR listadoDepartamentos).
-
-                    var select = document.createElement('select');      // CREATE AND ADD A DROPDOWN LIST.
-                    select.innerHTML = '<option value=""></option>';
-                    for (k = 0; k < listadoDepartamentos.length; k++) {
-                        select.innerHTML = select.innerHTML +
-                            '<option value="' + listadoDepartamentos[k].nombre + '">' + listadoDepartamentos[k].nombre + '</option>';
-                    }
-                    newCell.appendChild(select);
-                    break;
-                case 6: 
-                        var ele = document.createElement('input');      // TEXTBOX.
-                        ele.setAttribute('type', 'file');
-                        ele.setAttribute('id', 'inputfilecreate');
-                        newCell.appendChild(ele);
-                    break;
-                case 3:
-                var ele = document.createElement('input');      // TEXTBOX.
-                ele.setAttribute('type', 'date');
-                ele.setAttribute('id', 'inputdatecreate');
-                newCell.appendChild(ele);
-                    break;
-                default:
-                    var tBox = document.createElement('input');          // CREATE AND ADD A TEXTBOX.
-                    tBox.setAttribute('type', 'text');
-                    tBox.setAttribute('value', '');
-                    newCell.appendChild(tBox);
-                    break;
-                
-            }
+            
         
         }
 
@@ -307,8 +284,26 @@ function createTable(listadoPersonas, listadoDepartamentos) {
         btNew.setAttribute('value', 'Crear');
         btNew.setAttribute('id', 'crear' + i);
         btNew.setAttribute('style', 'background-color:#207DD1;');
-        btNew.addEventListener('click', function () { crear(this, col, listadoPersonas, listadoDepartamentos)});       // ADD THE BUTTON's 'onclick' EVENT.
+        btNew.addEventListener('click', function () { crear(this, col, listadoDepartamentos)});       // ADD THE BUTTON's 'onclick' EVENT.
         this.td.appendChild(btNew);
+
+        var cancel = document.createElement('label');
+
+        cancel.setAttribute('type', 'button');       // SET ATTRIBUTES.
+        cancel.innerHTML = '✖';
+        cancel.setAttribute('id', 'cancelarDeConfirmar' + i);
+        cancel.setAttribute('style', 'display:none;');
+        cancel.addEventListener('click', function () { cancelarDeConfirmar(this, col) });
+        this.td.appendChild(cancel);
+
+        var confirm= document.createElement('input');
+
+        confirm.setAttribute('type', 'button');       // SET ATTRIBUTES.
+        confirm.setAttribute('value', 'Confirmar');
+        confirm.setAttribute('id', 'confirmar' + i);
+        confirm.setAttribute('style', 'display:none;');
+        confirm.addEventListener('click', function () { confirmar(this, col, listadoPersonas, listadoDepartamentos) });       // ADD THE BUTTON's 'onclick' EVENT.
+        this.td.appendChild(confirm);
 
         var div = document.getElementById('container');
         div.innerHTML = '';
@@ -391,14 +386,21 @@ function editar(listadoDepartamentos,boton) {
                 break;
             case 4:            
                 var ele = document.createElement('select');      // DROPDOWN LIST.
-                ele.innerHTML = '<option value="' + td.innerText + '">' + td.innerText + '</option>';
+                //ele.innerHTML = '<option value="' + td.innerText + '">' + td.innerText + '</option>';
                 for (k = 0; k < listadoDepartamentos.length; k++) {
                     ele.innerHTML = ele.innerHTML +
                         '<option value="' + listadoDepartamentos[k].nombre + '">' + listadoDepartamentos[k].nombre + '</option>';
                 }
                 td.innerText = '';
                 td.appendChild(ele);
-            break;
+                break;
+            case 5:
+                var ele = document.createElement('input');      // INPUT FILE.
+                ele.setAttribute('type', 'number');
+                ele.setAttribute('value', td.innerText);
+                td.innerText = '';
+                td.appendChild(ele);
+                break;
             case 6:
                 var ele = document.createElement('input');      // INPUT FILE.
                 ele.setAttribute('type', 'file');
@@ -429,9 +431,21 @@ function editar(listadoDepartamentos,boton) {
 
 // borrar DATA.
 function borrar(oButton, listadoPersonas,listadoDepartamentos) {
-    var activeRow = oButton.parentNode.parentNode.rowIndex;
-    llamadaDELETE(listadoPersonas[activeRow - 1].idPersona);
-    listadoPersonas.splice((activeRow - 1), 1);// borrar THE ACTIVE ROW.    
+        var activeRow = oButton.parentNode.parentNode.rowIndex;
+        var r = confirm("¿Estas seguro de que deseas eliminar esta persona?");
+        if (r == true) {
+            if (listadoPersonas[activeRow - 1].idPersona == undefined) {
+                /*
+                 * El problema es basicamente que el CRUD no conoce el id de las ultimas personas creadas ya que la BBDD le da un ID autogenerado y como solo se piden las personas
+                 * al principio cuando se ejecuta el CRUD pues no es posible conocer su ID hasta que no volvamos a ejecutar.
+                 */
+                alert("Ups parece que esta persona ha sido creada recientemente, deberias probar a ejecutar de nuevo ya que puede que recargar la pagina no solucione tu problema.")
+            } else {
+                llamadaDELETE(listadoPersonas[activeRow - 1].idPersona);
+                listadoPersonas.splice((activeRow - 1), 1);
+            }
+        }
+        // borrar THE ACTIVE ROW.    
     createTable(listadoPersonas, listadoDepartamentos);// REFRESH THE TABLE.
 };
 
@@ -456,11 +470,9 @@ function guardar(oButton, col, listadoPersonas, listadoDepartamentos) {
             }// guardar THE VALUE.
         } else
             if (td.childNodes[0].getAttribute('type') == 'date') {
-                if (td.childNodes[0].value != null) {
-                    var fecha = new Date(td.childNodes[0].value);
-                    listadoPersonas[(activeRow - 1)][col[i]] = fecha;
-                    persona.fechaNacimiento = fecha;
-                }
+                var fecha = new Date(td.childNodes[0].value);
+                listadoPersonas[(activeRow - 1)][col[i]] = fecha;
+                persona.fechaNacimiento = fecha;
             } else if (td.childNodes[0].getAttribute('type') == 'file') {
                 if (document.getElementById('inputfile').files[0] != null) {
                     var file = document.getElementById('inputfile').files[0];
@@ -469,9 +481,12 @@ function guardar(oButton, col, listadoPersonas, listadoDepartamentos) {
                     listadoPersonas[(activeRow - 1)][col[i]] = async function () {
                         var byteArray = await toBase64(file);
                         return byteArray;
-                    } 
-                   
+                    }
+
                 }
+            } else if (td.childNodes[0].getAttribute('type') == 'number') {
+                listadoPersonas[(activeRow - 1)][col[i]] = td.childNodes[0].value;
+                persona[col[i]] = td.childNodes[0].value;
             }
     }
     persona.idPersona = listadoPersonas[activeRow - 1].idPersona;
@@ -486,11 +501,70 @@ const toBase64 = file => new Promise((resolve) => {
 });
 
 // CREATE NEW.
-function crear(oButton, col, listadoPersonas,listadoDepartamentos) {
+function crear(oButton, col, listadoDepartamentos) {
     var activeRow = oButton.parentNode.parentNode.rowIndex;
     var tab = document.getElementById('tablaPersonas').rows[activeRow];
-    var persona = new clsPersona();
 
+    var cancelar = document.getElementById('cancelarDeConfirmar' + (activeRow - 1));
+    cancelar.setAttribute('style', 'cursor:pointer; display:block; width:20px; float:left; position: absolute;');
+
+    var confirmar = document.getElementById('confirmar' + (activeRow - 1));
+    confirmar.setAttribute('style', 'display:block; margin-left:30px; float:left; background-color:#2DBF64;');
+
+    oButton.setAttribute('style', 'display:none;');
+
+    for (var j = 0; j < col.length - 1; j++) {
+        var td = tab.getElementsByTagName("td")[j];
+        switch (j) {
+            case 3:
+                var ele = document.createElement('input');      // TEXTBOX.
+                ele.setAttribute('type', 'date');
+                ele.setAttribute('id', 'inputdatecreate');
+                td.innerText = '';
+                td.appendChild(ele);
+                break;
+            case 4:    // WE'LL ADD A DROPDOWN LIST AT THE SECOND COLUMN (FOR listadoDepartamentos).
+
+                var select = document.createElement('select');      // CREATE AND ADD A DROPDOWN LIST.
+                select.innerHTML = '<option value=""></option>';
+                for (k = 0; k < listadoDepartamentos.length; k++) {
+                    select.innerHTML = select.innerHTML +
+                        '<option value="' + listadoDepartamentos[k].nombre + '">' + listadoDepartamentos[k].nombre + '</option>';
+                }
+                td.innerText = '';
+                td.appendChild(select);
+                break;
+            case 6:
+                var ele = document.createElement('input');      // TEXTBOX.
+                ele.setAttribute('type', 'file');
+                ele.setAttribute('id', 'inputfilecreate');
+                td.innerText = '';
+                td.appendChild(ele);
+                break;
+            case 5:
+                var telefono = document.createElement('input');
+                telefono.setAttribute('type', 'number');
+                td.appendChild(telefono);
+                break;
+            default:
+                var tBox = document.createElement('input');          // CREATE AND ADD A TEXTBOX.
+                tBox.setAttribute('type', 'text');
+                tBox.setAttribute('value', '');
+                td.innerText = '';
+                td.appendChild(tBox);
+                break;
+
+        }             
+    }
+    
+}
+
+function confirmar(oButton, col, listadoPersonas, listadoDepartamentos) {
+    var activeRow = oButton.parentNode.parentNode.rowIndex;
+    var tab = document.getElementById('tablaPersonas').rows[activeRow];
+
+    var persona = new clsPersona();
+    var sePuedeInsertar = true;
     // ADD NEW VALUE TO myBooks ARRAY.
     for (i = 0; i < col.length-1; i++) {
         var td = tab.getElementsByTagName("td")[i];
@@ -502,13 +576,16 @@ function crear(oButton, col, listadoPersonas,listadoDepartamentos) {
                     persona.idDepartamento = idDepartamento;
                 } else
                     persona[col[i]] = txtVal.trim();
-            }
+
+            } else
+                sePuedeInsertar = false;
         } else
             if (td.childNodes[0].getAttribute('type') == 'date') {
-                if (td.childNodes[0].value != null) {
+                if (td.childNodes[0].value != '') {
                     var fecha = new Date(td.childNodes[0].value);
                     persona.fechaNacimiento = fecha;
-                }
+                } else
+                    sePuedeInsertar = false;
             } else if (td.childNodes[0].getAttribute('type') == 'file') {
                 if (document.getElementById('inputfilecreate').files[0] != null) {
                     var file = document.getElementById('inputfilecreate').files[0];
@@ -521,16 +598,43 @@ function crear(oButton, col, listadoPersonas,listadoDepartamentos) {
 
 
                 }
+            } else if (td.childNodes[0].getAttribute('type') == 'number') {
+                persona[col[i]] = td.childNodes[0].value;
             }
     }
 
-    llamadaPOST(persona); 
+    if (sePuedeInsertar == true) {
+        llamadaPOST(persona);
 
-    if (Object.keys(persona).length > 0) {      // CHECK IF OBJECT IS NOT EMPTY.
-        listadoPersonas.push(persona);             // PUSH (ADD) DATA TO THE JSON ARRAY.
-        createTable(listadoPersonas, listadoDepartamentos);                 // REFRESH THE TABLE.
-    }
+        if (Object.keys(persona).length > 0) {      // CHECK IF OBJECT IS NOT EMPTY.
+            listadoPersonas.push(persona);             // PUSH (ADD) DATA TO THE JSON ARRAY.
+            createTable(listadoPersonas, listadoDepartamentos);
+        }// REFRESH THE TABLE.
+    } else
+        alert("Has dejado algun campo sin rellenar");
 }
 
+function cancelarDeConfirmar(boton, col) {
+    // HIDE THIS BUTTON.
+    boton.setAttribute('style', 'display:none; float:none;');
+
+    var activeRow = boton.parentNode.parentNode.rowIndex;
+
+    // HIDE THE guardar BUTTON.
+    var btConfirmar = document.getElementById('confirmar' + (activeRow - 1));
+    btConfirmar.setAttribute('style', 'display:none;');
+
+    // SHOW THE editar BUTTON AGAIN.
+    var btcrear = document.getElementById('crear' + (activeRow - 1));
+    btcrear.setAttribute('style', 'display:block; margin:0 auto; background-color:#207DD1;');
+
+    var tab = document.getElementById('tablaPersonas').rows[activeRow];
+
+    for (var j = 0; j < col.length - 1; j++) {
+        var td = tab.getElementsByTagName("td")[j];
+        td.innerText = '';
+       
+    }
+}
         // ****** OPERATIONS END.
     
