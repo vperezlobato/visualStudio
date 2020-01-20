@@ -1,0 +1,74 @@
+﻿@model _08_Victor_Examen_UI.Models.clsMainPageVM
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div>
+            @Html.DropDownListFor(x => Model.personaSeleccionada.idDepartamento, new SelectList(Model.listadoDepartamentos, "id", "nombre"))
+            <input type="submit" value="Seleccionar departamento" name="botonPulsado" />
+        </div>
+        <div>
+            @Html.DropDownListFor(x => Model.personaSeleccionada.idPersona, new SelectList(Model.listadoPersonas, "idPersona", "nombre"))
+            <input type="submit" value="Ver Detalle" name="botonPulsado" />
+        </div>
+
+        <div>
+            <dt>
+                @Html.DisplayNameFor(model => model.personaSeleccionada.nombre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.personaSeleccionada.nombre)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.personaSeleccionada.apellidos)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.personaSeleccionada.apellidos)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.personaSeleccionada.direccion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.personaSeleccionada.direccion)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.personaSeleccionada.fechaNacimiento)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.personaSeleccionada.fechaNacimiento)
+            </dd>
+
+
+            <dt>
+                @Html.DisplayNameFor(model => model.personaSeleccionada.telefono)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.personaSeleccionada.telefono)
+            </dd>
+        </div>
+    }
+
+</body>
+</html>
+
+    
+

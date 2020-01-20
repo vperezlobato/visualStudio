@@ -1,0 +1,14 @@
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-BL.deps.json
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-BL.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-BL.pdb
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-DAL.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-Entidades.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-DAL.pdb
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-Entidades.pdb
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-BL.csprojAssemblyReference.cache
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-BL.csproj.CoreCompileInputs.cache
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-BL.AssemblyInfoInputs.cache
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-BL.AssemblyInfo.cs
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-BL.csproj.CopyComplete
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-BL.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-BL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-BL.pdb

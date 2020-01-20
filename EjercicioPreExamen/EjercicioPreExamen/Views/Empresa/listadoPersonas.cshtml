@@ -1,0 +1,75 @@
+﻿@model EjercicioPreExamen.Models.personaConNombreDepartamentoYNombrePuestoTrabajoYListados
+
+@{
+    ViewBag.Title = "listadoPersonas";
+}
+
+<h2>listadoPersonas</h2>
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>listadoPersonas</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="/Empresa/listadoPersonas">
+            @Html.DropDownListFor(model => model.IDDepartamento, new SelectList(Model.listadoDepartamentos, "ID", "Nombre"))
+            <input type="submit" value="Seleccionar departamento" />
+        </form>
+    </div>
+    <table class="table">
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Apellidos
+            </th>
+            <th>
+                DNI
+            </th>
+            <th>
+                Nombre puesto trabajo
+            </th>
+            <th>
+                Nombre  departamento
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.listadoPersonas)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apellidos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DNI)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombrePuestoTrabajo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombreDepartamento)
+                </td>
+                <td>
+                    @Html.ActionLink("Departamento", "Departamento", new { DNI = item.DNI }) |
+                    @Html.ActionLink("Borrar", "Borrar", new { DNI = item.DNI })
+                </td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>

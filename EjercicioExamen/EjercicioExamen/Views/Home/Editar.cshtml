@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+@model EjercicioExamen.Models.clsPersona
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Editar</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <label> Nombre </label><input type="text" name="nombre" value="@Model.nombre" /><br />
+        <label> Apellidos </label> @Html.TextBox("Apellidos")<br />
+        <label> Fecha de Nacimiento </label> @Html.TextBoxFor(objpersona => objpersona.fechaNacimiento) <br />
+        <label> Direccion </label> @Html.TextBoxFor(objpersona => objpersona.direccion) <br />
+        <label> Departamento </label>@Html.TextBoxFor(objpersona => objpersona.departamento.id) <br />
+        <button type="submit">Enviar</button>
+    }
+
+</body>
+</html>

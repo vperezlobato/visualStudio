@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+@model clsPersona
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+    </div>
+    @ViewData["saludo"]
+    <br />
+    Hoy es @(ViewBag.FechaActual.ToLongDateString())
+    <br />
+    Hola @Model.nombre @Model.apellido1 @Model.apellido2
+    <br />
+    Fecha de nacimiento : @Model.fechaNacimiento
+    <br />
+    Telefono : @Model.telefono
+    <br />
+    Direccion : @Model.direccion
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿@model EjercicioExamen.Models.clsPersona
+@{
+    ViewBag.Title = "PersonaModificada";
+}
+
+<h2>PersonaModificada</h2>
+
+<html>
+
+<body>
+    <div>
+        @Html.DisplayFor(objPersona => objPersona.nombre)
+    </div>
+
+    <div>
+        @Html.DisplayFor(objPersona => objPersona.apellidos)
+    </div>
+
+
+    <div>
+        @Html.DisplayFor(objPersona => objPersona.direccion)
+    </div>
+
+    <div>
+        @Html.DisplayFor(objPersona => objPersona.fechaNacimiento)
+    </div>
+
+    <div>
+        @Html.DisplayFor(objPersona => objPersona.departamento)
+    </div>
+</body>
+</html>

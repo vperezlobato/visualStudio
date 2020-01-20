@@ -1,0 +1,12 @@
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-DAL\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-Entidades.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-DAL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-DAL.csprojAssemblyReference.cache
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-DAL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-DAL.csproj.CoreCompileInputs.cache
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-DAL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-DAL.AssemblyInfoInputs.cache
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-DAL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-DAL.AssemblyInfo.cs
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-DAL\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-DAL.deps.json
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-DAL\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-DAL.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-DAL\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-DAL.pdb
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-DAL\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-Entidades.pdb
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-DAL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-DAL.csproj.CopyComplete
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-DAL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-DAL.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-DAL\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-DAL.pdb

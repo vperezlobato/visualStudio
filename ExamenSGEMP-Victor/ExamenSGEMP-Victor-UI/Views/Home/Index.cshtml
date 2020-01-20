@@ -1,0 +1,54 @@
+﻿@model ExamenSGEMP_Victor_UI.Models.ViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <div>
+             @Html.DropDownListFor(model => Model.superheroeSeleccionado.idSuperheroe, new SelectList(Model.listadoSuperheroes, "idSuperheroe", "nombreSuperheroe"))
+        </div>
+
+        <table class="table">
+            <tr>
+                <th>
+                    Descripcion
+                </th>
+                <th>
+                    Seleccionar
+                </th>
+            </tr>
+
+
+            @foreach (var item in Model.listadoMisionesNoReservadas)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.descripcionMision)
+                    </td>
+                    <td>
+                        <input type="checkbox" name="objetosSeleccionados" value="@item.idMision" checked=""/>
+                    </td>
+                </tr>
+            }
+
+            <div>
+                <form method="post" action="/Home/Index">
+                    <input type="submit" name="reservar" value="Reservar" />
+                </form>
+            </div>
+
+
+        </table>
+    }
+    </body>
+    
+</html>
+

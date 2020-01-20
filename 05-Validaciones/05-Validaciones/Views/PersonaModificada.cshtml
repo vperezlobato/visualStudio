@@ -1,0 +1,32 @@
+﻿@model _05_Validaciones.Models.clsPersonaConDepartamento
+@{
+    ViewBag.Title = "PersonaModificada";
+}
+
+<h2>PersonaModificada</h2>
+
+<html>
+
+<body>
+    <div>
+        Nombre: @Html.DisplayFor(persona => persona.objPersona.nombre)
+    </div>
+
+    <div>
+        Apellidos: @Html.DisplayFor(persona => persona.objPersona.apellidos)
+    </div>
+
+    <div>
+        Fecha de nacimiento: @Html.DisplayFor(persona => persona.objPersona.fechaNacimiento)
+    </div>
+
+    <div>
+        Direccion: @Html.DisplayFor(persona => persona.objPersona.direccion)
+    </div>
+
+    <div>
+        ID del departamento: @Html.DisplayFor(persona => persona.objPersona.idDepartamento)
+    </div>
+
+</body>
+</html>

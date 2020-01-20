@@ -1,0 +1,6 @@
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_Entidades\bin\Debug\08-Victor-Examen_Entidades.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_Entidades\bin\Debug\08-Victor-Examen_Entidades.pdb
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_Entidades\obj\Debug\08-Victor-Examen_Entidades.csprojAssemblyReference.cache
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_Entidades\obj\Debug\08-Victor-Examen_Entidades.csproj.CoreCompileInputs.cache
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_Entidades\obj\Debug\08-Victor-Examen_Entidades.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_Entidades\obj\Debug\08-Victor-Examen_Entidades.pdb

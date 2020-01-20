@@ -1,0 +1,5 @@
+C:\Users\Victor\Desktop\EjercicioPreExamen\EjercicioPreExamen-Entidades\bin\Debug\EjercicioPreExamen-Entidades.dll
+C:\Users\Victor\Desktop\EjercicioPreExamen\EjercicioPreExamen-Entidades\bin\Debug\EjercicioPreExamen-Entidades.pdb
+C:\Users\Victor\Desktop\EjercicioPreExamen\EjercicioPreExamen-Entidades\obj\Debug\EjercicioPreExamen-Entidades.csprojAssemblyReference.cache
+C:\Users\Victor\Desktop\EjercicioPreExamen\EjercicioPreExamen-Entidades\obj\Debug\EjercicioPreExamen-Entidades.dll
+C:\Users\Victor\Desktop\EjercicioPreExamen\EjercicioPreExamen-Entidades\obj\Debug\EjercicioPreExamen-Entidades.pdb

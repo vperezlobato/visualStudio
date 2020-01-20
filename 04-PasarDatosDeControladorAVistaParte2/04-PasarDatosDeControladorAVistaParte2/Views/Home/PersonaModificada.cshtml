@@ -1,0 +1,35 @@
+﻿@model _04_PasarDatosDeControladorAVistaParte2.clsPersona
+@{
+    ViewBag.Title = "PersonaModificada";
+}
+
+<h2>PersonaModificada</h2>
+
+<html>
+
+<body>
+    <div>
+        @Html.DisplayFor(objPersona => objPersona.nombre)
+    </div>
+
+    <div>
+        @Html.DisplayFor(objPersona => objPersona.apellido1)
+    </div>
+
+    <div>
+        @Html.DisplayFor(objPersona => objPersona.apellido2)
+    </div>
+
+    <div>
+        @Html.DisplayFor(objPersona => objPersona.telefono)
+    </div>
+
+    <div>
+        @Html.DisplayFor(objPersona => objPersona.direccion)
+    </div>
+
+    <div>
+        @Html.DisplayFor(objPersona => objPersona.fechaNacimiento)
+    </div>
+</body>
+</html>

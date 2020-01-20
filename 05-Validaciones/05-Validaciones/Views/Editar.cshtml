@@ -1,0 +1,25 @@
+﻿@model_05_Validaciones.Models.clsPersona
+@{
+    ViewBag.Title = "Editar";
+
+}
+
+<h2>Editar</h2>
+
+<html>
+<body>
+    @using (Html.BeginForm())
+    {
+        <label> Nombre: </label>@Html.TextBoxFor(persona => persona.objPersona.nombre) <br />
+        <label> Apellidos: </label> @Html.TextBoxFor(persona => persona.objPersona.apellidos)<br />
+        <label> Fecha de Nacimiento: </label> @Html.TextBoxFor(persona => persona.objPersona.fechaNacimiento) <br />
+        <label> Direccion: </label> @Html.TextBoxFor(persona => persona.objPersona.direccion) <br />
+
+        <label></label>@Html.DropDownListFor(x => x.objPersona.idDepartamento, new SelectList(Model.listado, "id", "nombre"), "- Selecciona una de las opciones -")<br />
+
+
+        <button type="submit">Enviar</button>
+    }
+
+</body>
+</html>

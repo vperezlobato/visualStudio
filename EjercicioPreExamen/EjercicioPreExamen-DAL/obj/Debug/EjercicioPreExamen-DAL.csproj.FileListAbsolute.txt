@@ -1,0 +1,8 @@
+C:\Users\Victor\Desktop\EjercicioPreExamen\EjercicioPreExamen-DAL\bin\Debug\EjercicioPreExamen-DAL.dll
+C:\Users\Victor\Desktop\EjercicioPreExamen\EjercicioPreExamen-DAL\bin\Debug\EjercicioPreExamen-DAL.pdb
+C:\Users\Victor\Desktop\EjercicioPreExamen\EjercicioPreExamen-DAL\bin\Debug\EjercicioPreExamen-Entidades.dll
+C:\Users\Victor\Desktop\EjercicioPreExamen\EjercicioPreExamen-DAL\bin\Debug\EjercicioPreExamen-Entidades.pdb
+C:\Users\Victor\Desktop\EjercicioPreExamen\EjercicioPreExamen-DAL\obj\Debug\EjercicioPreExamen-DAL.csprojAssemblyReference.cache
+C:\Users\Victor\Desktop\EjercicioPreExamen\EjercicioPreExamen-DAL\obj\Debug\EjercicioPreExamen-DAL.csproj.CopyComplete
+C:\Users\Victor\Desktop\EjercicioPreExamen\EjercicioPreExamen-DAL\obj\Debug\EjercicioPreExamen-DAL.dll
+C:\Users\Victor\Desktop\EjercicioPreExamen\EjercicioPreExamen-DAL\obj\Debug\EjercicioPreExamen-DAL.pdb

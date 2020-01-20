@@ -1,0 +1,9 @@
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-Entidades\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-Entidades.deps.json
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-Entidades\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-Entidades.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-Entidades\bin\Debug\netcoreapp2.1\CRUD-Personas-netcore-Entidades.pdb
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-Entidades\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-Entidades.csprojAssemblyReference.cache
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-Entidades\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-Entidades.csproj.CoreCompileInputs.cache
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-Entidades\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-Entidades.AssemblyInfoInputs.cache
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-Entidades\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-Entidades.AssemblyInfo.cs
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-Entidades\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-Entidades.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\CRUD-Personas-netcore\CRUD-Personas-netcore-Entidades\obj\Debug\netcoreapp2.1\CRUD-Personas-netcore-Entidades.pdb

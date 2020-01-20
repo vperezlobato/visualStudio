@@ -1,0 +1,6 @@
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-Entidades\bin\Debug\ExamenSGEMP-Victor-Entidades.dll
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-Entidades\bin\Debug\ExamenSGEMP-Victor-Entidades.pdb
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-Entidades\obj\Debug\ExamenSGEMP-Victor-Entidades.csprojAssemblyReference.cache
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-Entidades\obj\Debug\ExamenSGEMP-Victor-Entidades.csproj.CoreCompileInputs.cache
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-Entidades\obj\Debug\ExamenSGEMP-Victor-Entidades.dll
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-Entidades\obj\Debug\ExamenSGEMP-Victor-Entidades.pdb

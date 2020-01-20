@@ -1,0 +1,9 @@
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_DAL\bin\Debug\08-Victor-Examen_DAL.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_DAL\bin\Debug\08-Victor-Examen_DAL.pdb
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_DAL\bin\Debug\08-Victor-Examen_Entidades.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_DAL\bin\Debug\08-Victor-Examen_Entidades.pdb
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_DAL\obj\Debug\08-Victor-Examen_DAL.csprojAssemblyReference.cache
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_DAL\obj\Debug\08-Victor-Examen_DAL.csproj.CoreCompileInputs.cache
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_DAL\obj\Debug\08-Victor-Examen_DAL.csproj.CopyComplete
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_DAL\obj\Debug\08-Victor-Examen_DAL.dll
+C:\Users\vmperez\Documents\GitHub\VisualStudio_SGEMP\08-Victor-Examen\08-Victor-Examen_DAL\obj\Debug\08-Victor-Examen_DAL.pdb

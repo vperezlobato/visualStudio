@@ -1,0 +1,25 @@
+﻿@model _05_Validaciones.Models.clsPersona
+@{
+    ViewBag.Title = "Editar";
+
+}
+
+<h2>Editar</h2>
+
+<html>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.ID) @Html.ValidationMessageFor(model => model.ID)
+        <label> Nombre: </label>@Html.TextBoxFor(model => model.nombre) @Html.ValidationMessageFor(model => model.nombre, "", new { @class = "text-danger" })<br />
+        <label> Apellidos: </label> @Html.TextBoxFor(model => model.apellidos) @Html.ValidationMessageFor(model => model.apellidos, "", new { @class = "text-danger" })<br />
+        <label> Fecha de Nacimiento: </label> @Html.TextBoxFor(model => model.fechaNacimiento) @Html.ValidationMessageFor(model => model.fechaNacimiento, "", new { @class = "text-danger" }) <br />
+        <label> Direccion: </label> @Html.TextBoxFor(model => model.direccion) @Html.ValidationMessageFor(model => model.direccion, "", new { @class = "text-danger" })<br />
+        <label> Telefono</label> @Html.TextBoxFor(model => model.telefono) @Html.ValidationMessageFor(model => model.telefono, "", new { @class = "text-danger" })
+
+        <button type="submit">Enviar</button>
+        @Html.ValidationSummary()
+    }
+
+</body>
+</html>

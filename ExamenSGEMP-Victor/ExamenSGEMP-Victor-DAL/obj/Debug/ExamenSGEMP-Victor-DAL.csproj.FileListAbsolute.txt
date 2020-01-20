@@ -1,0 +1,9 @@
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-DAL\bin\Debug\ExamenSGEMP-Victor-DAL.dll
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-DAL\bin\Debug\ExamenSGEMP-Victor-DAL.pdb
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-DAL\bin\Debug\ExamenSGEMP-Victor-Entidades.dll
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-DAL\bin\Debug\ExamenSGEMP-Victor-Entidades.pdb
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-DAL\obj\Debug\ExamenSGEMP-Victor-DAL.csprojAssemblyReference.cache
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-DAL\obj\Debug\ExamenSGEMP-Victor-DAL.csproj.CoreCompileInputs.cache
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-DAL\obj\Debug\ExamenSGEMP-Victor-DAL.csproj.CopyComplete
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-DAL\obj\Debug\ExamenSGEMP-Victor-DAL.dll
+C:\Users\vmperez\Desktop\ExamenSGEMP-Victor\ExamenSGEMP-Victor-DAL\obj\Debug\ExamenSGEMP-Victor-DAL.pdb

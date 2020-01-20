@@ -1,0 +1,44 @@
+﻿@model _04_PasarDatosALaVista.Models.clsListado
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>listadoPersonas</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido1</th>
+            <th>Apellido2</th>
+            <th>Fecha Nacimiento</th>
+        </tr>
+
+        @foreach (var persona in Model.listadoPersonas())
+        {
+            <tr>
+                <td>
+                    @persona.nombre
+                </td>
+                <td>
+                    @persona.apellido1
+                </td>
+                <td>
+                    @persona.apellido2
+                </td>
+                <td>
+                    @persona.fechaNacimiento
+                </td>
+            </tr>
+        }
+    </table>
+    
+
+    @Html.ActionLink("Volver","Index")
+</body>
+</html>
