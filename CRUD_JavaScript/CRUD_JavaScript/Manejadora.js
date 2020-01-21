@@ -490,8 +490,13 @@ function guardar(oButton, col, listadoPersonas, listadoDepartamentos) {
             }
     }
     persona.idPersona = listadoPersonas[activeRow - 1].idPersona;
-    llamadaPUT(persona); 
-    createTable(listadoPersonas, listadoDepartamentos); // REFRESH THE TABLE.
+    if (persona.idPersona == undefined) {
+
+        alert("Ups parece que esta persona ha sido creada recientemente, deberias probar a ejecutar de nuevo ya que puede que recargar la pagina no solucione tu problema.")
+    } else {
+        llamadaPUT(persona);
+        createTable(listadoPersonas, listadoDepartamentos);
+    } // REFRESH THE TABLE.
 }
 
 const toBase64 = file => new Promise((resolve) => {
