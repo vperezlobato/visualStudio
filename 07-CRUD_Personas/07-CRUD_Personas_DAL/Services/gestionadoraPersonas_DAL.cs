@@ -267,5 +267,53 @@ namespace _07_CRUD_Personas_DAL.Services
             }
             return objPersona;
         }
+
+        /// <summary>
+        /// Funcion que recibe como parametro un entero id y devuelve la persona correspondiente a ese id. 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Devuelve un objeto persona</returns>
+        public clsPersona buscarPersonaPorApellido_DAL(String apellidos)
+        {
+            clsPersona objPersona = new clsPersona();
+
+            clsMyConnection miConexion = new clsMyConnection();
+            SqlConnection conexion = miConexion.getConnection();
+            SqlCommand comando = new SqlCommand();
+            SqlDataReader miLector = null;
+            System.Type tipoDBNULL = DBNull.Value.GetType();
+            try
+            {
+                comando.Connection = conexion;
+                comando.Parameters.Add("@apellidos", System.Data.SqlDbType.VarChar).Value = apellidos;
+                comando.CommandText = "Select * From PD_Personas Where ApellidosPersona = @apellidos";
+                miLector = comando.ExecuteReader();
+
+                if (miLector.HasRows)
+                {
+                    miLector.Read();
+
+                    objPersona.idPersona = miLector["IdPersona"].GetType() != tipoDBNULL ? (int)miLector["IdPersona"] : 0;
+                    objPersona.nombre = miLector["NombrePersona"].GetType() != tipoDBNULL ? (string)miLector["NombrePersona"] : null;
+                    objPersona.apellidos = miLector["ApellidosPersona"].GetType() != tipoDBNULL ? (string)miLector["ApellidosPersona"] : null;
+                    objPersona.fechaNacimiento = miLector["FechaNacimientoPersona"].GetType() != tipoDBNULL ? (DateTime)miLector["FechaNacimientoPersona"] : new DateTime();
+                    objPersona.direccion = miLector["Direccion"].GetType() != tipoDBNULL ? (string)miLector["Direccion"] : null;
+                    objPersona.telefono = miLector["TelefonoPersona"].GetType() != tipoDBNULL ? (string)miLector["TelefonoPersona"] : null;
+                    objPersona.foto = miLector["FotoPersona"].GetType() != tipoDBNULL ? (byte[])miLector["FotoPersona"] : null;
+                    objPersona.idDepartamento = miLector["IDDepartamento"].GetType() != tipoDBNULL ? (int)miLector["IDDepartamento"] : 0;
+                }
+
+                miLector.Close();
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+            finally
+            {
+                miConexion.closeConnection(ref conexion);
+            }
+            return objPersona;
+        }
     }
 }

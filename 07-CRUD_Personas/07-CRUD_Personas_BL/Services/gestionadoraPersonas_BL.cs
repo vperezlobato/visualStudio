@@ -54,5 +54,16 @@ namespace _07_CRUD_Personas_BL.Services
             return objPersona;
         }
 
+        public clsPersona buscarPersonaPorApellido_BL(String apellidos)
+        {
+            clsPersona objPersona = new clsPersona();
+
+            gestionadoraPersonas_DAL gestionadora = new gestionadoraPersonas_DAL();
+
+            objPersona = gestionadora.buscarPersonaPorApellido_DAL(apellidos);
+
+            return objPersona;
+        }
+
     }
 }

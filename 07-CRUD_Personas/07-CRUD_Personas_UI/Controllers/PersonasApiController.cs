@@ -47,5 +47,11 @@ namespace _07_CRUD_Personas_UI.Controllers
         {
             gestionadora.borrarPersona_BL(id);
         }
+
+        // GET: api/PersonasAPI?apellidos=perez
+        public clsPersona Get(String apellidos)
+        {
+            return gestionadora.buscarPersonaPorApellido_BL(apellidos);
+        }
     }
 }
