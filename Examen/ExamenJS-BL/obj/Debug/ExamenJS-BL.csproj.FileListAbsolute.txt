@@ -1,0 +1,11 @@
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-BL\bin\Debug\ExamenJS-BL.dll
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-BL\bin\Debug\ExamenJS-BL.pdb
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-BL\bin\Debug\ExamenJS-DAL.dll
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-BL\bin\Debug\ExamenJS-Entities.dll
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-BL\bin\Debug\ExamenJS-DAL.pdb
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-BL\bin\Debug\ExamenJS-Entities.pdb
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-BL\obj\Debug\ExamenJS-BL.csprojAssemblyReference.cache
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-BL\obj\Debug\ExamenJS-BL.csproj.CoreCompileInputs.cache
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-BL\obj\Debug\ExamenJS-BL.csproj.CopyComplete
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-BL\obj\Debug\ExamenJS-BL.dll
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-BL\obj\Debug\ExamenJS-BL.pdb

@@ -1,0 +1,9 @@
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-DAL\bin\Debug\ExamenJS-DAL.dll
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-DAL\bin\Debug\ExamenJS-DAL.pdb
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-DAL\bin\Debug\ExamenJS-Entities.dll
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-DAL\bin\Debug\ExamenJS-Entities.pdb
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-DAL\obj\Debug\ExamenJS-DAL.csprojAssemblyReference.cache
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-DAL\obj\Debug\ExamenJS-DAL.csproj.CoreCompileInputs.cache
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-DAL\obj\Debug\ExamenJS-DAL.csproj.CopyComplete
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-DAL\obj\Debug\ExamenJS-DAL.dll
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-DAL\obj\Debug\ExamenJS-DAL.pdb

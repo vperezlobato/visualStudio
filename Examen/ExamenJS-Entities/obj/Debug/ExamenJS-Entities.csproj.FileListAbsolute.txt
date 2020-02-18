@@ -1,0 +1,6 @@
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-Entities\bin\Debug\ExamenJS-Entities.dll
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-Entities\bin\Debug\ExamenJS-Entities.pdb
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-Entities\obj\Debug\ExamenJS-Entities.csprojAssemblyReference.cache
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-Entities\obj\Debug\ExamenJS-Entities.csproj.CoreCompileInputs.cache
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-Entities\obj\Debug\ExamenJS-Entities.dll
+C:\Users\vmperez\Documents\GitHub\visualStudio\Examen\ExamenJS-Entities\obj\Debug\ExamenJS-Entities.pdb

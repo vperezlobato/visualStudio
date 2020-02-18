@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamenJS-UI", "Examen-UI\ExamenJS-UI.csproj", "{9AF39C41-C33B-4E91-9222-18794F00430A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamenJS-DAL", "ExamenJS-DAL\ExamenJS-DAL.csproj", "{0392AEF0-496B-49A9-8299-EC1C7E1FA683}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamenJS-BL", "ExamenJS-BL\ExamenJS-BL.csproj", "{56488A09-138B-4FE3-BE2B-04CB4496C309}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamenJS-Entities", "ExamenJS-Entities\ExamenJS-Entities.csproj", "{B23689EB-A68C-43F9-8C57-4EDEE9342E67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AF39C41-C33B-4E91-9222-18794F00430A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AF39C41-C33B-4E91-9222-18794F00430A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AF39C41-C33B-4E91-9222-18794F00430A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AF39C41-C33B-4E91-9222-18794F00430A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0392AEF0-496B-49A9-8299-EC1C7E1FA683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0392AEF0-496B-49A9-8299-EC1C7E1FA683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0392AEF0-496B-49A9-8299-EC1C7E1FA683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0392AEF0-496B-49A9-8299-EC1C7E1FA683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56488A09-138B-4FE3-BE2B-04CB4496C309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56488A09-138B-4FE3-BE2B-04CB4496C309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56488A09-138B-4FE3-BE2B-04CB4496C309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56488A09-138B-4FE3-BE2B-04CB4496C309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B23689EB-A68C-43F9-8C57-4EDEE9342E67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B23689EB-A68C-43F9-8C57-4EDEE9342E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B23689EB-A68C-43F9-8C57-4EDEE9342E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B23689EB-A68C-43F9-8C57-4EDEE9342E67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACA7E800-AB52-444C-B4A0-CD491194B6E0}
+	EndGlobalSection
+EndGlobal
