@@ -108,6 +108,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\departamentosController.cs" />
     <Compile Include="Controllers\PersonasApiController.cs" />
     <Compile Include="Controllers\PersonasController.cs" />
     <Compile Include="Global.asax.cs">
@@ -128,6 +129,8 @@
     <Content Include="Views\Home\Details.cshtml" />
     <Content Include="Views\Home\Create.cshtml" />
     <Content Include="Views\Home\listadoPersonas.cshtml" />
+    <None Include="Properties\PublishProfiles\CRUDPersonasUI-Victor - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\crudpersonasvictor - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

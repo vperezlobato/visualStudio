@@ -20,51 +20,61 @@
             <dt>
                 @Html.DisplayNameFor(model => model.nombre)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.nombre)
             </dd>
-    
+
             <dt>
                 @Html.DisplayNameFor(model => model.apellidos)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.apellidos)
             </dd>
-    
+
             <dt>
                 @Html.DisplayNameFor(model => model.direccion)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.direccion)
             </dd>
-    
+
             <dt>
                 @Html.DisplayNameFor(model => model.fechaNacimiento)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.fechaNacimiento)
             </dd>
-    
+
             <dt>
                 @Html.DisplayNameFor(model => model.telefono)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.telefono)
             </dd>
-    
+
             <dt>
                 @Html.DisplayNameFor(model => model.nombreDepartamento)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.nombreDepartamento)
             </dd>
-    
+            @if (Model.foto != null)
+            {
+                <dt>
+                    @Html.DisplayNameFor(model => model.foto)
+                </dt>
+
+                <dd>
+                    <img src="data:image;base64,@System.Convert.ToBase64String(Model.foto)" width="80" height="80" />
+                </dd>
+            }
+
         </dl>
     
         @using (Html.BeginForm()) {

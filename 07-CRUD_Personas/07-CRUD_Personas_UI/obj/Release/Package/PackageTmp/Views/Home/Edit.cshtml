@@ -68,23 +68,26 @@
                 @Html.DropDownListFor(x => Model.idDepartamento, new SelectList(Model.listadoDepartamentos, "id", "nombre"), Model.idDepartamento)
             </div>
         </div>
+        @if (Model.foto != null)
+        {
+            <div class="form-group">
+                @Html.DisplayNameFor(model => model.foto)
+                <div class="col-md-10">
+                    <img src="data:image;base64,@System.Convert.ToBase64String(Model.foto)" width="80" height="80" />
+                </div>
+            </div>
+        }
+        
 
         <div class="form-group">
-            @Html.DisplayNameFor(model => model.foto)
-            <div class="col-md-10">
-                <img src="data:image;base64,@System.Convert.ToBase64String(Model.foto)" width="80" height="80" />
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="file" name="ImageData" />
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
             </div>
         </div>
 

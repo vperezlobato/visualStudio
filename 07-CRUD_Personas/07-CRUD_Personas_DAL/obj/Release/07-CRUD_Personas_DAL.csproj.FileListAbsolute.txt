@@ -7,3 +7,11 @@ C:\Users\vmperez\Desktop\07-CRUD_Personas\07-CRUD_Personas_DAL\obj\Release\07-CR
 C:\Users\vmperez\Desktop\07-CRUD_Personas\07-CRUD_Personas_DAL\obj\Release\07-CRUD_Personas_DAL.csproj.CopyComplete
 C:\Users\vmperez\Desktop\07-CRUD_Personas\07-CRUD_Personas_DAL\obj\Release\07-CRUD_Personas_DAL.dll
 C:\Users\vmperez\Desktop\07-CRUD_Personas\07-CRUD_Personas_DAL\obj\Release\07-CRUD_Personas_DAL.pdb
+C:\Users\Victor\Documents\GitHub\visualStudio\07-CRUD_Personas\07-CRUD_Personas_DAL\bin\Release\07-CRUD_Personas_DAL.dll
+C:\Users\Victor\Documents\GitHub\visualStudio\07-CRUD_Personas\07-CRUD_Personas_DAL\bin\Release\07-CRUD_Personas_DAL.pdb
+C:\Users\Victor\Documents\GitHub\visualStudio\07-CRUD_Personas\07-CRUD_Personas_DAL\bin\Release\07-CRUD_Personas_Entidades.dll
+C:\Users\Victor\Documents\GitHub\visualStudio\07-CRUD_Personas\07-CRUD_Personas_DAL\bin\Release\07-CRUD_Personas_Entidades.pdb
+C:\Users\Victor\Documents\GitHub\visualStudio\07-CRUD_Personas\07-CRUD_Personas_DAL\obj\Release\07-CRUD_Personas_DAL.csprojAssemblyReference.cache
+C:\Users\Victor\Documents\GitHub\visualStudio\07-CRUD_Personas\07-CRUD_Personas_DAL\obj\Release\07-CRUD_Personas_DAL.csproj.CopyComplete
+C:\Users\Victor\Documents\GitHub\visualStudio\07-CRUD_Personas\07-CRUD_Personas_DAL\obj\Release\07-CRUD_Personas_DAL.dll
+C:\Users\Victor\Documents\GitHub\visualStudio\07-CRUD_Personas\07-CRUD_Personas_DAL\obj\Release\07-CRUD_Personas_DAL.pdb
